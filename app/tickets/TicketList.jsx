@@ -1,9 +1,11 @@
 import Link from "next/link";
 
+
 async function GetTickets(){
+
   const res = await fetch('http://localhost:4000/tickets', {
     next: {
-      revalidate: 30
+      revalidate: 0
     }
   });
   const data = await res.json();
