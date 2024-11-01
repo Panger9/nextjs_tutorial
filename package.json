@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server": "json-server --watch --port 4000 ./data/db.json"
   },
   "dependencies": {
     "react": "19.0.0-rc-02c0e824-20241028",
